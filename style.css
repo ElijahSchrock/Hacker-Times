@@ -33,6 +33,9 @@ nav > ul > li, nav > ul > li > a {
  nav {
     border-top: solid 1px #eee;
     border-bottom: solid 1px #eee;
+    position: sticky;
+    top: 0;
+    background-color: white;
  }
 
  main > h2 {
@@ -56,6 +59,11 @@ nav > ul > li, nav > ul > li > a {
      width: 100%;
  }
 
+.three-articles > section{
+    display: inline-block;
+    width: 14.4em;
+}
+
  .more-articles > section {
      display: inline-block;
      width: 21.5em;
@@ -64,7 +72,7 @@ nav > ul > li, nav > ul > li > a {
     border-top: solid 1px #eee;
  }
 
- .more-articles > section > img {
+ .more-articles > section > img, .three-articles > section > img {
      padding-right: 1em;
      padding-left: 1em;
  }
@@ -78,7 +86,15 @@ nav > ul > li, nav > ul > li > a {
      padding-left: 20px;
  }
 
- .more-articles > section > h4 {
+ .more-articles > section > h4, .three-articles > section > h4 {
      padding-left: 15px;
      font-family: Roboto Slab;
+ }
+
+ .footer, .footer > ul > li > a {
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    bottom: 7.5em;
+    border-top: solid 1px #eee;
  }
